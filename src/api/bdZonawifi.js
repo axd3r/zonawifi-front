@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-const bdMuni = axios.create({
+const bdZonawifi = axios.create({
      baseURL: 'http://127.0.0.1:8000/api'
 })
 
-export default bdMuni
+export default bdZonawifi

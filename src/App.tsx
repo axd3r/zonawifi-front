@@ -5,7 +5,7 @@ import Loader from './common/Loader';
 import PageTitle from './components/PageTitle';
 import SignIn from './pages/Authentication/SignIn';
 import SignUp from './pages/Authentication/SignUp';
-import Calendar from './pages/Calendar';
+//import Calendar from './pages/Calendar';
 import Chart from './pages/Chart';
 import ECommerce from './pages/Dashboard/ECommerce';
 import FormElements from './pages/Form/FormElements';
@@ -16,6 +16,7 @@ import Tables from './pages/Tables';
 import Alerts from './pages/UiElements/Alerts';
 import Buttons from './pages/UiElements/Buttons';
 import DefaultLayout from './layout/DefaultLayout';
+import Usuarios from './pages/Usuarios/usuarios';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -44,11 +45,11 @@ function App() {
           }
         />
         <Route
-          path="/calendar"
+          path="/usuarios"
           element={
             <>
-              <PageTitle title="Calendar | TailAdmin - Tailwind CSS Admin Dashboard Template" />
-              <Calendar />
+              <PageTitle title="Usuarios | ZonaWifi - Tailwind CSS Admin Dashboard Template" />
+              <Usuarios />
             </>
           }
         />
